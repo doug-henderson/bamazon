@@ -53,7 +53,7 @@ function processOrder(id, quantity) {
       getPrice(id, quantity);
       updateStock(adjQuantity, id);
     } else {
-      console.log('There is not enough stock to fulfill your request, please try again');
+      console.log('There is currently not enough stock to fulfill your request, please check back soon.');
       connection.end();
     }
   });
